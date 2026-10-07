@@ -1,0 +1,3 @@
+httpx
+python-dotenv
+aiogram  # yoki pyTelegramBotAPI / python-telegram-bot (botingiz qaysi birida yozilgan bo'lsa)
