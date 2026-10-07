@@ -72,7 +72,7 @@ Bunda "answer" to'g'ri variantning indeksi (0, 1, 2 yoki 3)."""
 
 async def groq_chat(messages, json_mode=True, temperature=0.3, retries=6):
     key = os.environ.get("GROQ_API_KEY", "")
-    model = os.environ.get("GROQ_MODEL", "llama-3.1-8b-instant")
+    model = os.environ.get("GROQ_MODEL", ""openai/gpt-oss-120b"")
     if not key:
         raise RuntimeError("GROQ_API_KEY topilmadi (.env faylini tekshiring)")
     payload = {"model": model, "messages": messages, "temperature": temperature}
